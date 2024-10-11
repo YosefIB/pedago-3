@@ -1,15 +1,15 @@
 export class Subject {
     subjectID: string;
     name: string;
-
-    constructor(id: string, name: string) {
-        this.subjectID = id;
+    
+    constructor( name: string) {
+        this.id = crypto.randomUUID();
         this.name = name;
     }
 }
 
-export const subject: Subject[] = [];
-
-subject.push(new Subject("1", "Mathematics"));
-subject.push(new Subject("2", "English"));
-subject.push(new Subject("3", "Python"));
+export const subjects: Subject[] = [
+    new Subject("Calculus"),
+    new Subject("Arithmetics"),
+    new Subject("2nd Grade Math"),
+]

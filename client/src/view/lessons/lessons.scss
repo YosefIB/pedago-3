@@ -1,0 +1,35 @@
+.lessons {
+    background-color: tomato;
+    &_h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    &_h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: #555;
+    }
+
+    &_ul {
+        list-style-type: none;
+        padding: 0;
+
+        &_li {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+
+            a {
+                text-decoration: none;
+                color: #007bff;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: #0056b3;
+                }
+            }
+        }
+    }
+}

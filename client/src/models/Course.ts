@@ -1,21 +1,21 @@
 export class Course{
-    id: number;
+    id: string;
     name: string;
 
-    constructor(id: number, name: string) {
-        this.id = id;
+    constructor( name: string) {
+        this.id = crypto.randomUUID();
         this.name = name;
     }
 
 }
 
-export const course: Course[]=[];
+export interface Subject {
+    name: string;
+    id: number;
+}
 
-course.push(new Course(1, 'Maths'));
-
-course.push(new Course(2, 'Science'));
-
-course.push(new Course(3, 'English'));
-
-course.push(new Course(4, 'Arabic'));
-
+export const courses: Course[] = [
+    new Course("Math"),
+    new Course("Science"),
+    new Course("History"),
+]
