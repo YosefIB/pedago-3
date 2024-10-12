@@ -1,5 +1,5 @@
 .lessons {
-    background-color: tomato;
+
     &_h1 {
         font-size: 2.5rem;
         margin-bottom: 1rem;
@@ -32,4 +32,17 @@
             }
         }
     }
+
+    .line{
+        border: 1px solid #ccc;
+      
+    }
+}
+
+.red{
+    background-color: red;
+}
+
+.col{
+    border: 1px solid #ccc;
 }
