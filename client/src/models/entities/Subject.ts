@@ -11,5 +11,5 @@ export class Subject {
 export const subjects: Subject[] = [
     new Subject("Calculus"),
     new Subject("Arithmetics"),
-    new Subject("2nd Grade Math"),
+    new Subject("Cubism"),
 ]

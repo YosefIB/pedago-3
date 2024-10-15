@@ -9,11 +9,6 @@ export class Course {
 
 }
 
-export interface Subject {
-    name: string;
-    id: number;
-}
-
 export const courses: Course[] = [
     new Course("Algebra Linear"),
     new Course("Geometry"),
