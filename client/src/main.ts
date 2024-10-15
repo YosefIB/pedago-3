@@ -7,17 +7,26 @@ import { getCourseSubjects } from './controllers/courseSubjectsCont.ts';
 import { testCourseSubjects } from './models/joinTables/coursesSubjectModel.ts';
 import { renderCourseSubjects } from './view/courseSubjects/courseSubjectView.ts';
 import { renderSelectCourse } from './view/components/selectCourse/renderSelectCourse.ts';
+import { renderCoursRegister } from './view/components/coursRegister/CoursRegister.ts';
 
 
 
 try {
     testCourseSubjects();
-
-
-    renderFirstPage();
+    main();
 }
 catch (error) {
     console.error(error);
+}
+function main(){
+    try{
+    const page = document.querySelector<HTMLDivElement>('#app');
+    if (!page) throw new Error("page not found");
+    page.innerHTML = renderCoursRegister(courses);
+    }
+    catch(error){
+        console.error(error);
+    }
 }
 
 
